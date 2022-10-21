@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview QNA 3</title>
+</head>
+<body>
+    <h1 align=center> INTERVIEW QUESTION DAY 3</h1>
+    <h2 align="center">Html Interview QNA</h2><b><hr></b>
+    <h3> 1. Write a code to insert an image</h3>
+    <p>The &lt;img&gt; tag is used to embed an image in an HTML page.</p><br>
+    <p>The &lt;img&gt; tag has two required attributes:</p>
+    <p><b>&nbsp;&nbsp;&nbsp;&nbsp;.src - Specifies the path to the image</b></p>
+    <p><b>&nbsp;&nbsp;&nbsp;&nbsp;.alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</b></p><br>
+    <p><b>syntax of image tag :-</b> &nbsp; &nbsp;&lt;img src="path to the image" alt="#"&gt;</p><hr>
+    <h3>2. Create a form contain input fields like name age email and contact</h3>
+    <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+    <p>The HTML &lt;form&gt; element is used to create an HTML form for user input:</p>
+    
+        <b>code of form input name age email and contact :-</b>
+              
+   
+    <pre>
+        &lt;form action=""&gt;
+            &lt;label for="Name"&gt;Name&lt;/label&gt;
+            &lt;input type="text" name="Name" placeholder="enter your name"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="Age"&gt;Age&lt;/label&gt;
+            &lt;input type="date" name="age"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="Email"&gt;Email:-&lt;/label&gt;
+            &lt;input type="email" name="email" placeholder="enter your email"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="phone"&gt;Phone&lt;/label&gt;
+            &lt;input type="phone" name="number" placeholder="+91"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="Submit"&gt;&lt;/label&gt;
+            &lt;input type="submit" value="Submit" name="submit"&gt;
+        &lt;/form&gt;
+    </pre>
+    <b>output:-</b><br><br>
+    <form action="">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" placeholder="enter your name"><br><br>
+        <label for="Age">Age</label>
+        <input type="date" name="age"><br><br>
+        <label for="Email">Email:-</label>
+        <input type="email" name="email" placeholder="enter your email"><br><br>
+        <label for="phone">Phone</label>
+        <input type="phone" name="phone" placeholder="+91"><br><br>
+        <label for="Submit"></label>
+        <input type="submit" value="Submit" name="submit">
+    </form><br><hr>
+    <h3>3. Creat a table and explain how to achive colspan</h3>
+    <p>the colspan attribute defines the number of columns a cell should merge.</p>
+    <pre>
+        <b>code of table with colspan :-</b><br>
+        &lt;table border="1"&gt;
+            &lt;tr&gt;
+              &lt;th&gt;Day&lt;/th&gt;
+              &lt;th&gt;Savings&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Monday&lt;/td&gt;
+              &lt;td&gt;Rs100&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Tuesday&lt;/td&gt;
+              &lt;td&gt;Rs80&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td colspan="2"&gt;Sum: Rs180&lt;/td&gt;<b>here two column merge</b>
+            &lt;/tr&gt;
+          &lt;/table&gt;
+    </pre>
+    <b>Output:-</b><br><br>
+    <table border="1">
+        <tr>
+          <th>Day</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Rs100</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Rs80</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sum: Rs180</td>
+        </tr>
+      </table><hr>
+      <h3>4. Create radio button(MERN,MEAN:course)and checkbox(HTML , CSS , REACT , NODE TECHNOLOGY) and explain the difference between these two</h3>
+      <p><b>Radio button :- </b>A radio button is used when you want to select only one option out of several available options.it is generally userd in HTML forms.</p>
+      <p><b>Checkbox :- </b>A checkbox allows you to choose one or many options to be selected from a list of options. it is also used in HTML forms.</p>
+      <b>code of Radio button :-</b><br><br>
+      <pre>
+        &lt;form action=""&gt;<br>
+        &lt;label for="Course"&gt;Course&lt;/label&gt;<br>
+        &lt;input type="radio" name="check" id=""&gt;<br>
+        &lt;label for="MERN"&gt;MERN&lt;/label&gt;<br>
+        &lt;input type="radio" name="check" id=""&gt;<br>
+        &lt;label for="MEAN"&gt;MEAN&lt;/label&gt;<br>
+      &lt;/form&gt;
+      </pre>
+      <b>Output:-</b><br><br>
+      <form action="">
+        <label for="Course">Course :- </label><br><br>
+        <input type="radio" name="check" id="">
+        <label for="MEAN">MERN</label><br><br>
+        <input type="radio" name="check" id="">
+        <label for="MEAN">MEAN</label>
+        
+      </form><br>
+      <b>code of checkbox :-</b><br><br>
+      <pre>
+        &lt;form action=""&gt;
+            &lt;label for="HTML">HTML&lt;/label&gt;
+            &lt;input type="checkbox" name="" id=""&gt;
+            &lt;label for="HTML"&gt;CSS&lt;/label&gt;
+            &lt;input type="checkbox" name="" id=""&gt;
+            &lt;label for="HTML"&gt;REACT&lt;/label&gt;
+            &lt;input type="checkbox" name="" id=""&gt;
+            &lt;label for="HTML"&gt;NODE TECHNOLOGY&lt;/label&gt;
+            &lt;input type="checkbox" name="" id=""&gt;
+          &lt;/form&gt;
+      </pre>
+      <b>Output:-</b><br><br>
+      <form action="">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="" id=""><br><br>
+        <label for="HTML">CSS</label>
+        <input type="checkbox" name="" id=""><br><br>
+        <label for="HTML">REACT</label>
+        <input type="checkbox" name="" id=""><br><br>
+        <label for="HTML">NODE TECHNOLOGY</label>
+        <input type="checkbox" name="" id=""><br><br>
+      </form>
+    <br><br>
